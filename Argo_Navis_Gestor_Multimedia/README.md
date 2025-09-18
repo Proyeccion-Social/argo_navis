@@ -37,7 +37,7 @@ Desde la carpeta Docker, ejecuta:
 
 `docker-compose down -v`: Para eliminar datos residuales anteriores.
 
-`docker-compose up -d`: Para inicializar el repositorio.
+`docker-compose up -d`: Para inicializar el contenedor.
 
 3. **Conexión a la base de datos**  
 
