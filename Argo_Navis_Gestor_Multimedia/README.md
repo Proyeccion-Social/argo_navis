@@ -22,15 +22,13 @@ Este documento contiene los pasos para levantar la base de datos Argo Navis con 
 
 1. **Configurar el archivo `.env`**  
 
-En la carpeta Docker existe un archivo `.env` con:
+En la carpeta Docker existe un archivo `.env` con datos de las variables de entorno:
 
-`POSTGRES_USER=gestor_argo_navis_savide`
+`POSTGRES_USER`
 
-`POSTGRES_PASSWORD=arg123savide`
+`POSTGRES_PASSWORD`
 
-`POSTGRES_DB=argo_navis`
-
-`DB_PORT=5432`
+`POSTGRES_DB`
 
 
 2. **Levantar el contenedor de Docker Compose**  
@@ -46,10 +44,10 @@ Desde la carpeta Docker, ejecuta:
 Utiliza cualquier cliente PostgreSQL versión 16. Los datos son:
 
 - Host: localhost
-- Puerto: 5432
-- Usuario: gestor_argo_navis_savide
-- Contraseña: arg123savide
-- Base de datos: argo_navis
+- POSTGRES_USER: ${POSTGRES_USER}
+- POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+- POSTGRES_DB: ${POSTGRES_DB}
+- "${DB_PORT}:5432"
 
 4. **Cargar las tablas y datos**  
 
