@@ -41,7 +41,7 @@ Desde la carpeta Docker, ejecuta:
 
 3. **Conexión a la base de datos**  
 
-Utiliza cualquier cliente PostgreSQL versión 16. Los datos son:
+Utiliza cualquier cliente PostgreSQL versión 16. Los datos a usar desde la variable de entorno son:
 
 - Host: localhost
 - POSTGRES_USER: ${POSTGRES_USER}
